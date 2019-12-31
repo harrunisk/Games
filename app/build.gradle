@@ -1,0 +1,33 @@
+apply plugin: Plugins.androidApplication
+apply from: "$rootDir/common.gradle"
+
+android {
+    flavorDimensions Dimensions.default
+    productFlavors {
+        prod {
+            // empty
+        }
+
+        dev {
+            applicationIdSuffix Dev.applicationIdSuffix
+            versionNameSuffix Dev.versionNameSuffix
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+
+    // Core
+    implementation project(Modules.core)
+    implementation project(Modules.coreData)
+    implementation project(Modules.coreDomain)
+    implementation project(Modules.corePresentation)
+    implementation project(Modules.coreNavigation)
+
+    // Support Libraries
+    implementation SupportLibraries.appCompat
+}
