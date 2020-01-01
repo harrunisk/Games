@@ -1,2 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nstudiosappdev.games.dashboard.presentation" />
+    package="com.nstudiosappdev.games.dashboard.presentation">
+
+    <application>
+        <activity android:name="com.nstudiosappdev.games.dashboard.presentation.DashboardActivity"/>
+    </application>
+</manifest>

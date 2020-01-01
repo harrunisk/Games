@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.nstudiosappdev.games">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".GamesApp"
         android:allowBackup="true"

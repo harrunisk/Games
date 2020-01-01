@@ -6,7 +6,7 @@ import com.nstudiosappdev.core.navigation.loadIntentOrReturnNull
 
 object Dashboard : Feature<Intent> {
 
-    private const val MAIN = "$PACKAGE_NAME.dashboard.presentation.Dashboard"
+    private const val MAIN = "$PACKAGE_NAME.dashboard.presentation.DashboardActivity"
 
     override val dynamicStart: Intent?
         get() = MAIN.loadIntentOrReturnNull()

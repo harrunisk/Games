@@ -10,7 +10,7 @@ import retrofit2.http.Query
 
 interface GameServices {
 
-    @GET
+    @GET("api/games")
     fun fetchGames(
         @Query("page_size") pageSize: Int? = ApiConstants.pageSize,
         @Query("page") page: Int? = ApiConstants.page
