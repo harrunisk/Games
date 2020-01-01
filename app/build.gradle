@@ -28,6 +28,11 @@ dependencies {
     implementation project(Modules.corePresentation)
     implementation project(Modules.coreNavigation)
 
+    // Dashboard
+    implementation project(Modules.dashboardData)
+    implementation project(Modules.dashboardDomain)
+    implementation project(Modules.dashboardPresentation)
+
     // Support Libraries
     implementation SupportLibraries.appCompat
 }

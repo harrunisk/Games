@@ -21,7 +21,7 @@ class ApiModule {
     @Provides
     @Singleton
     @Named(NAME_URL)
-    fun provideBaseUrl(): String = "https://api.rawg.io/api/games/"
+    fun provideBaseUrl(): String = "https://api.rawg.io/"
 
     @Provides
     @Singleton
