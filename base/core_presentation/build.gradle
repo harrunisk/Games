@@ -7,5 +7,6 @@ dependencies {
     // View
     api SupportLibraries.appCompat
     api SupportLibraries.constraintLayout
+    api SupportLibraries.recyclerView
     api Libraries.lifecycleExtensions
 }
