@@ -6,6 +6,7 @@ import com.nstudiosappdev.games.dashboard.domain.objects.Game
 import com.nstudiosappdev.games.dashboard.domain.objects.GameDetail
 import io.reactivex.Single
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface GameServices {
@@ -16,8 +17,8 @@ interface GameServices {
         @Query("page") page: Int? = ApiConstants.page
     ): Single<ApiResponse<List<Game>>>
 
-    @GET
+    @GET("api/games/{id}")
     fun getGameDetail(
-        @Query("") id: Int?
-    ): Single<ApiResponse<GameDetail>>
+        @Path("id") id: Int?
+    ): Single<GameDetail>
 }

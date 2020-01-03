@@ -1,11 +1,25 @@
 package com.nstudiosappdev.games.dashboard.presentation
 
 import com.nstudiosappdev.core.presentation.recyclerview.*
+import com.nstudiosappdev.games.dashboard.presentation.GamePresentationConstants.TYPES.GAME
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
+import dagger.multibindings.IntKey
+import dagger.multibindings.IntoMap
 
 @Module
 abstract class DashboardPresentationModule {
+
+    @Binds
+    @IntoMap
+    @IntKey(GAME)
+    internal abstract fun bindGameViewHolderFactory(viewHolderFactory: GameViewHolder.GameViewHolderFactory): ViewHolderFactory
+
+    @Binds
+    @IntoMap
+    @IntKey(GAME)
+    internal abstract fun bindGameViewHolderBinder(viewHolderBinder: GameViewHolder.GameViewHolderBinder): ViewHolderBinder
 
     @Module
     companion object {

@@ -30,10 +30,10 @@ object Versions {
     const val rxAndroidVersion = "2.1.1"
     const val mockitoVersion = "2.18.3"
     const val constraintLayoutVersion = "1.1.2"
-    const val chartViewVersion = "v3.1.0"
     const val archCore = "2.0.1"
     const val rules = "1.0.2"
     const val truthVersion = "1.0"
     const val truthExtVersion = "1.3.0-alpha01"
     const val mockKVersion = "1.9.3"
+    const val glide = "4.10.0"
 }

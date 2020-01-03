@@ -1,6 +1,7 @@
 package com.nstudiosappdev.games.dashboard.presentation
 
 import com.nstudiosappdev.core.injection.scope.ActivityScope
+import com.nstudiosappdev.games.dashboard.presentation.gamedetail.GameDetailFragmentModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -8,7 +9,8 @@ import dagger.android.ContributesAndroidInjector
 abstract class DashboardActivityModule {
     @ActivityScope
     @ContributesAndroidInjector(
-        modules = [DashboardFragmentModule::class]
+        modules = [DashboardFragmentModule::class,
+            GameDetailFragmentModule::class]
     )
 
     abstract fun provideDashboardActivity(): DashboardActivity
