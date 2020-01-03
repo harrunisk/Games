@@ -14,6 +14,7 @@ class GameDetailViewEntityMapper : Function<GameDetail, DisplayItem> {
             release = t.released,
             backgroundImage = t.backgroundImage,
             backgroundImageAdditional = t.backgroundImageAdditional,
+            website = t.website,
             rating = t.rating,
             ratingsCount = t.ratingsCount,
             reviewCounts = t.reviewsCount
