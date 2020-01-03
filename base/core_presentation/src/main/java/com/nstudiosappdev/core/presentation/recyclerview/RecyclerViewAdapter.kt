@@ -1,6 +1,7 @@
 package com.nstudiosappdev.core.presentation.recyclerview
 
 import android.annotation.SuppressLint
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -15,11 +16,14 @@ class RecyclerViewAdapter constructor(
     private val viewBinderFactoryMap: Map<Int, ViewHolderBinder>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>(), DiffAdapter {
 
+    var itemClickListener: ((view: View, item: DisplayItem) -> Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder =
         viewHolderFactoryMap[viewType]?.createViewHolder(parent)!!
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         viewBinderFactoryMap[items[position].type()]?.bind(holder, items[position])
+        (holder as ViewHolder<*>).itemClickListener = itemClickListener
     }
 
     override fun getItemCount() = items.size

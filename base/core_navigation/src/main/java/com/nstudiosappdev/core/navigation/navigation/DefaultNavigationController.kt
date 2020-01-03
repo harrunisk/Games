@@ -3,6 +3,7 @@ package com.nstudiosappdev.core.navigation.navigation
 import androidx.fragment.app.FragmentActivity
 import com.nstudiosappdev.core.navigation.features.Dashboard
 import com.nstudiosappdev.core.navigation.features.DashboardFragment
+import com.nstudiosappdev.core.navigation.features.GameDetailFragment
 import java.lang.ref.WeakReference
 
 class DefaultNavigationController constructor(
@@ -16,4 +17,15 @@ class DefaultNavigationController constructor(
             })
 
     override fun navigateToDashboard() = start(Dashboard.dynamicStart)
+
+    override fun navigateToGameDetailFragment(containerId: Int, gameId: Int) =
+        start(
+            GameDetailFragment.dynamicStartWithGameId(gameId),
+            containerId,
+            transaction = {
+                replace(
+                    containerId,
+                    GameDetailFragment.dynamicStartWithGameId(gameId)!!
+                ).addToBackStack(null)
+            })
 }
