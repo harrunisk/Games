@@ -11,7 +11,8 @@ class GameDetailViewEntity(
     val release: String?,
     val backgroundImage: String?,
     val backgroundImageAdditional: String?,
-    val rating: Int?,
+    val website: String?,
+    val rating: Double?,
     val ratingsCount: Int?,
     val reviewCounts: Int?
 ) : ViewEntity, DisplayItem {
