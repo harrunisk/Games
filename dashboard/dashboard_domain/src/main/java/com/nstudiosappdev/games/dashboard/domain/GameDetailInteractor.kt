@@ -20,7 +20,6 @@ class GameDetailInteractor @Inject constructor(
         }
     }
 
-
     class GameInteractorParams(
         val id: Int
     ) : Interactor.Params()

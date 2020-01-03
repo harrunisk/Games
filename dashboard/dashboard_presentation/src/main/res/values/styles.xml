@@ -43,4 +43,10 @@
         <item name="android:textColor">@color/defaultItemSubTitleColor</item>
     </style>
 
+
+    <style name="CollapsedExpandedTitleText">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+
 </resources>

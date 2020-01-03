@@ -8,6 +8,7 @@ dependencies {
     api SupportLibraries.appCompat
     api SupportLibraries.constraintLayout
     api SupportLibraries.recyclerView
+    api SupportLibraries.materialDesign
     api Libraries.glide
     api Libraries.lifecycleExtensions
 }
