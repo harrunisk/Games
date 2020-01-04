@@ -1,3 +1,5 @@
+import Versions.androidTagViewVersion
+
 /*
  * Core Libraries
  */
@@ -51,4 +53,6 @@ object Libraries {
     const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroidVersion}"
     const val retrofitRxAdapter = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofitVersion}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+    const val tagLibrary = "co.lujun:androidtagview:${androidTagViewVersion}"
+
 }

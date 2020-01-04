@@ -2,4 +2,6 @@ apply from: "$rootDir/common-android-library.gradle"
 dependencies {
     implementation project(Modules.corePresentation)
     implementation project(Modules.dashboardDomain)
+
+    api Libraries.tagLibrary
 }
