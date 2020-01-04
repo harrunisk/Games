@@ -34,4 +34,6 @@ interface NavigationController {
     fun navigateToDashboardFragment(containerId: Int)
 
     fun navigateToGameDetailFragment(containerId: Int, gameId: Int)
+
+    fun navigateToBottomNavigation(containerId: Int)
 }

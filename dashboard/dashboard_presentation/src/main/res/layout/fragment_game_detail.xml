@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="280dp"
         app:elevation="4dp"
+        android:layout_marginTop="10dp"
         tools:targetApi="LOLLIPOP">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout

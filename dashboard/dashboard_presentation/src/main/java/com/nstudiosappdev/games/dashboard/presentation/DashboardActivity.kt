@@ -19,6 +19,7 @@ class DashboardActivity : BaseActivity() {
         this.navigationController = DefaultNavigationController(WeakReference(this))
 
         navigationController.navigateToDashboardFragment(R.id.fl_main)
+        navigationController.navigateToBottomNavigation(R.id.fl_bottom_navigation)
     }
 
 }

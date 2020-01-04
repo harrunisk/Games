@@ -64,6 +64,8 @@ class DashboardFragment : BaseFragment() {
 
     override fun initView() {
         super.initView()
+
+
         recyclerViewGames.apply {
             setup(
                 context = context!!,

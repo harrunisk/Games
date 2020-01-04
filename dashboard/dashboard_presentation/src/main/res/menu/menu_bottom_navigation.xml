@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigationGames"
+        android:icon="@drawable/ic_games"
+        android:fontFamily="@font/roboto_regular"
+        android:title="@string/bottom_navigation_games"/>
+
+    <item
+        android:id="@+id/navigationLive"
+        android:icon="@drawable/ic_tv"
+        android:fontFamily="@font/roboto_regular"
+        android:title="@string/bottom_navigation_live"/>
+    <item
+        android:id="@+id/navigationFavorites"
+        android:icon="@drawable/ic_favorite"
+        android:fontFamily="@font/roboto_regular"
+        android:title="@string/bottom_navigation_favorites"/>
+
+</menu>
