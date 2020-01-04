@@ -12,8 +12,7 @@ class GameViewEntityMapper : Function<Game, DisplayItem> {
             name = t.name,
             released = t.released,
             backgroundImage = t.backgroundImage,
-            rating = t.rating,
-            genre = t.genres
+            rating = t.rating
         )
     }
 

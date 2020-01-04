@@ -2,6 +2,8 @@ package com.nstudiosappdev.games.dashboard.data
 
 import com.nstudiosappdev.core.data.source.DataSource
 import com.nstudiosappdev.core.error.DefaultErrorFactory
+import com.nstudiosappdev.core.error.ErrorConstants.Companion.API_ERROR_CODE
+import com.nstudiosappdev.core.error.ErrorConstants.Companion.API_ERROR_MESSAGE
 import com.nstudiosappdev.core.model.DataHolder
 import com.nstudiosappdev.games.dashboard.domain.GameRepository
 import com.nstudiosappdev.games.dashboard.domain.GamesRequest
@@ -19,14 +21,14 @@ class GameRepositoryImpl @Inject constructor(
         gamesRemoteDataSource
             .getResult(request)
             .map { it }
-            .onErrorReturn { DataHolder.Fail(DefaultErrorFactory().createApiError(1, "123")) }
+            .onErrorReturn { DataHolder.Fail(DefaultErrorFactory().createApiError(API_ERROR_CODE, API_ERROR_MESSAGE)) }
             .subscribeOn(Schedulers.io())
 
     override fun getGameDetail(id: Int): Single<DataHolder<GameDetail>> =
         gameDetailRemoteDataSource
             .getResult(id)
             .map { it }
-            .onErrorReturn { DataHolder.Fail(DefaultErrorFactory().createApiError(1, "123")) }
+            .onErrorReturn { DataHolder.Fail(DefaultErrorFactory().createApiError(API_ERROR_CODE, API_ERROR_MESSAGE)) }
             .subscribeOn(Schedulers.io())
 
 }
