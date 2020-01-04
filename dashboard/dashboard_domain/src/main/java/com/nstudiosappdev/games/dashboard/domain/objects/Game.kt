@@ -25,7 +25,7 @@ data class Game(
     @SerializedName("dominantColor") val dominantColor: String?,
 //    @SerializedName("platforms") val platforms: Platform?,
 //    @SerializedName("parent_platforms") val parentPlatforms: PlatformDetail?,
-//    @SerializedName("genres") val genres: List<Genre?>?,
+    @SerializedName("genres") val genres: List<Genre>?,
 //    @SerializedName("stores") val stores: List<Store?>?,
     @SerializedName("clip") val clip: Clip?,
     @SerializedName("short_screenshots") val shortScreenshots: List<ScreenShot?>?

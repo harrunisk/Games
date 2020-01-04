@@ -16,8 +16,6 @@ class GameViewHolder private constructor(itemView: View) : ViewHolder<GameViewEn
 
     override fun bind(item: GameViewEntity) {
         itemView.textViewName.text = item.name
-        itemView.textViewRating.text = item.rating.toString()
-        itemView.textViewReleaseDate.text = item.released
         item.backgroundImage?.let {
             itemView.imageViewBackground.loadImage(it)
         }
