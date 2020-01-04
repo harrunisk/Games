@@ -22,7 +22,7 @@ class GameDetailViewModel @Inject constructor(
 
     private val _gameDetailLiveData = MediatorLiveData<DataHolder<DisplayItem>>()
 
-    private val gameDetailLiveData: LiveData<DataHolder<DisplayItem>>
+    val gameDetailLiveData: LiveData<DataHolder<DisplayItem>>
         get() = _gameDetailLiveData
 
     private val compositeDisposable = CompositeDisposable()

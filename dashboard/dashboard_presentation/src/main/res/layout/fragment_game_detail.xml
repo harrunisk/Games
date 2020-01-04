@@ -25,7 +25,7 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
-                android:id="@+id/gameDetailBackground"
+                android:id="@+id/game_detail_background"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
@@ -43,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -53,6 +54,10 @@
             <include
                 android:id="@+id/detail_header"
                 layout="@layout/layout_game_detail_header" />
+
+            <include
+                android:id="@+id/detail_body"
+                layout="@layout/layout_game_detail_body" />
 
 
         </LinearLayout>
