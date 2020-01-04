@@ -36,4 +36,5 @@ object Versions {
     const val truthExtVersion = "1.3.0-alpha01"
     const val mockKVersion = "1.9.3"
     const val glide = "4.10.0"
+    const val androidTagViewVersion = "1.1.4"
 }
