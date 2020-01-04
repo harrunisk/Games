@@ -4,21 +4,13 @@
 
     <ImageView
         android:id="@+id/imageViewBackground"
-        style="@style/GameItem.Image"/>
+        style="@style/GameItem.Image" />
 
     <LinearLayout style="@style/GameItem.Wrapper.Inner">
 
         <TextView
             android:id="@+id/textViewName"
-            style="@style/GameItem.Title"/>
-
-        <TextView
-            android:id="@+id/textViewRating"
-            style="@style/GameItem.Rating"/>
-
-        <TextView
-            android:id="@+id/textViewReleaseDate"
-            style="@style/GameItem.ReleaseDate"/>
+            style="@style/GameItem.Title" />
 
     </LinearLayout>
 
