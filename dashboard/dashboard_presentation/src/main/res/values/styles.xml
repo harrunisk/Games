@@ -5,10 +5,10 @@
 
     <style name="GameItem.Wrapper">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">256dp</item>
-        <item name="android:paddingStart">16dp</item>
-        <item name="android:paddingEnd">16dp</item>
-        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_height">@dimen/default_game_item_height</item>
+        <item name="android:paddingStart">@dimen/space_m</item>
+        <item name="android:paddingEnd">@dimen/space_m</item>
+        <item name="android:layout_marginBottom">@dimen/space_m</item>
     </style>
 
     <style name="GameItem.Wrapper.Inner">

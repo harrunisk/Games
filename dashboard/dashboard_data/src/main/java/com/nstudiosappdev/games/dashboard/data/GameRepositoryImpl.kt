@@ -21,14 +21,28 @@ class GameRepositoryImpl @Inject constructor(
         gamesRemoteDataSource
             .getResult(request)
             .map { it }
-            .onErrorReturn { DataHolder.Fail(DefaultErrorFactory().createApiError(API_ERROR_CODE, API_ERROR_MESSAGE)) }
+            .onErrorReturn {
+                DataHolder.Fail(
+                    DefaultErrorFactory().createApiError(
+                        API_ERROR_CODE,
+                        API_ERROR_MESSAGE
+                    )
+                )
+            }
             .subscribeOn(Schedulers.io())
 
     override fun getGameDetail(id: Int): Single<DataHolder<GameDetail>> =
         gameDetailRemoteDataSource
             .getResult(id)
             .map { it }
-            .onErrorReturn { DataHolder.Fail(DefaultErrorFactory().createApiError(API_ERROR_CODE, API_ERROR_MESSAGE)) }
+            .onErrorReturn {
+                DataHolder.Fail(
+                    DefaultErrorFactory().createApiError(
+                        API_ERROR_CODE,
+                        API_ERROR_MESSAGE
+                    )
+                )
+            }
             .subscribeOn(Schedulers.io())
 
 }

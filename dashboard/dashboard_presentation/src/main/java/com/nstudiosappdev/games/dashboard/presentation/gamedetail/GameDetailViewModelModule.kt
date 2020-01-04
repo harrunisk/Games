@@ -21,6 +21,7 @@ abstract class GameDetailViewModelModule {
     companion object {
         @JvmStatic
         @Provides
-        fun provideGameDetailViewEntityMapper(): Function<GameDetail, DisplayItem> = GameDetailViewEntityMapper()
+        fun provideGameDetailViewEntityMapper(): Function<GameDetail, DisplayItem> =
+            GameDetailViewEntityMapper()
     }
 }

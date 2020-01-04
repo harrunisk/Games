@@ -13,9 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:text="Screenshots"
+        android:text="@string/text_view_screenshots"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/font_xxlarge"
         android:textStyle="bold"
         android:visibility="gone"
         tools:visibility="visible" />
@@ -24,26 +24,26 @@
         android:id="@+id/detail_body_recyclerView_screenshots"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/space_m"
         android:visibility="gone"
         tools:visibility="visible" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
-        android:text="Description"
+        android:layout_marginTop="@dimen/space_l"
+        android:text="@string/text_view_description"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/font_xxlarge"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/detail_body_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/space_m"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="@dimen/font_large"
         tools:text="Summary" />
 
     <co.lujun.androidtagview.TagContainerLayout
@@ -54,14 +54,14 @@
         app:tag_background_color="@color/colorPrimary"
         app:tag_border_color="@color/colorPrimary"
         app:tag_clickable="false"
-        app:tag_horizontal_padding="5dp"
+        app:tag_horizontal_padding="@dimen/space_xs"
         app:tag_text_color="@color/white"
         app:tag_theme="none"
-        app:tag_vertical_padding="6dp"
+        app:tag_vertical_padding="@dimen/space_xs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:padding="10dp"
+        android:layout_marginTop="@dimen/space_m"
+        android:padding="@dimen/space_s"
         android:visibility="gone"
         tools:visibility="visible" />
 
@@ -69,10 +69,10 @@
         android:id="@+id/detail_body_reviews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Reviews"
+        android:layout_marginTop="@dimen/space_m"
+        android:text="@string/text_view_reviews"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/font_xxlarge"
         android:textStyle="bold"
         android:visibility="gone"
         tools:visibility="visible" />
@@ -82,7 +82,7 @@
         android:id="@+id/detail_body_recyclerView_reviews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="@dimen/space_m"
         android:visibility="gone"
         tools:visibility="visible" />
 

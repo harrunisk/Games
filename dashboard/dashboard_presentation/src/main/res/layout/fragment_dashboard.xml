@@ -16,8 +16,8 @@
             android:id="@+id/recyclerViewGames"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="@dimen/space_m"
+            android:orientation="vertical" />
     </LinearLayout>
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
