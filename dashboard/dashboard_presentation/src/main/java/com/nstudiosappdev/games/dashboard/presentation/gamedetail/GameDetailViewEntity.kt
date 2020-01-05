@@ -10,11 +10,7 @@ class GameDetailViewEntity(
     val description: String?,
     val release: String?,
     val backgroundImage: String?,
-    val backgroundImageAdditional: String?,
-    val website: String?,
-    val rating: Double?,
-    val ratingsCount: Int?,
-    val reviewCounts: Int?
+    val rating: Double?
 ) : ViewEntity, DisplayItem {
     override fun type(): Int = GamePresentationConstants.TYPES.GAME_DETAIL
 

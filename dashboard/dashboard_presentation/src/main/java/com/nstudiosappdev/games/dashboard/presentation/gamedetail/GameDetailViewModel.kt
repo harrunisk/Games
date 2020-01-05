@@ -47,6 +47,9 @@ class GameDetailViewModel @Inject constructor(
                             )
                         )
                     }
+                    is DataHolder.Fail -> {
+                        _gameDetailLiveData.postValue(DataHolder.Fail(it.e))
+                    }
                 }
             }, {
                 _gameDetailLiveData.postValue(

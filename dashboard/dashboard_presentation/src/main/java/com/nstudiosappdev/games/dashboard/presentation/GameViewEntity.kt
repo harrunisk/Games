@@ -9,8 +9,7 @@ class GameViewEntity(
     val name: String?,
     val released: String?,
     val backgroundImage: String?,
-    val rating: Double?,
-    val genre: List<Genre>?
+    val rating: Double?
 ) : ViewEntity, DisplayItem {
 
     override fun type(): Int =
