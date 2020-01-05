@@ -4,8 +4,7 @@
 [![Android Studio](https://img.shields.io/badge/android%20studio-3.5-brightgreen)](https://developer.android.com/studio)
 
 <p align="center">
-<img src="https://github.com/harrunisk/Games/blob/Feature-Dashboard/art/Image.jpg" width="275">
-<img src="https://github.com/harrunisk/Games/blob/Feature-Dashboard/art/appGif.gif" alt="Games" width="275"><img src="https://github.com/harrunisk/Games/blob/Feature-Dashboard/art/Image1.jpg" width="275">
+<img src="https://github.com/harrunisk/Games/blob/Feature-Dashboard/art/appGif.gif" alt="Games" width="300">
 </p>
 
 ### Architecture
