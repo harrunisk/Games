@@ -51,7 +51,7 @@ class DashboardViewModel @Inject constructor(
         }
     }
 
-    fun getGames(page: Int, pageSize: Int) {
+    fun getGames(page: Int?, pageSize: Int?) {
         _gamesLiveData.value = DataHolder.Loading()
         val params = GamesInteractor.GamesInteractorParams(
             page = page,
@@ -76,6 +76,9 @@ class DashboardViewModel @Inject constructor(
                                 _gamesLiveData.postValue(DataHolder.Success(this))
                                 games.addAll(this)
                             }
+                    }
+                    is DataHolder.Fail -> {
+                        _gamesLiveData.postValue(DataHolder.Fail(it.e))
                     }
                 }
             }, {

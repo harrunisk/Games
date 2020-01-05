@@ -11,9 +11,9 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
-        app:elevation="4dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/default_app_bar_layout_height"
+        android:layout_marginTop="@dimen/space_m"
+        app:elevation="@dimen/space_xs"
         tools:targetApi="LOLLIPOP">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -48,9 +48,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/space_m"
             android:orientation="vertical"
-            android:padding="15dp">
+            android:padding="@dimen/space_m">
 
             <include
                 android:id="@+id/detail_header"

@@ -3,4 +3,8 @@
     <string name="bottom_navigation_games">Games</string>
     <string name="bottom_navigation_live">Live</string>
     <string name="bottom_navigation_favorites">Favorites</string>
+
+    <string name="text_view_screenshots">Screenshots</string>
+    <string name="text_view_description">Description</string>
+    <string name="text_view_reviews">Reviews</string>
 </resources>

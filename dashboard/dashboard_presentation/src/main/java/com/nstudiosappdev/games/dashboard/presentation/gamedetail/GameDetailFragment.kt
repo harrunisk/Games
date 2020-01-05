@@ -58,19 +58,17 @@ class GameDetailFragment : BaseFragment() {
 
     private fun initUi(gameDetailViewEntity: GameDetailViewEntity) {
 
-
-        // Detail fragment
         game_detail_background.loadImage(gameDetailViewEntity.backgroundImage!!)
 
-        // Header
         detail_header_title.text = gameDetailViewEntity.name
         detail_header_release.text = gameDetailViewEntity.release
         detail_header_star.rating = gameDetailViewEntity.rating!!.toFloat()
 
-        // Body
         detail_body_description.text =
-            HtmlCompat.fromHtml(gameDetailViewEntity.description!!, HtmlCompat.FROM_HTML_MODE_COMPACT)
+            HtmlCompat.fromHtml(
+                gameDetailViewEntity.description!!,
+                HtmlCompat.FROM_HTML_MODE_COMPACT
+            )
 
     }
-
 }
