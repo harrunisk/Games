@@ -3,6 +3,10 @@
 [![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
 [![Android Studio](https://img.shields.io/badge/android%20studio-3.5-brightgreen)](https://developer.android.com/studio)
 
+<p align="center">
+<img src="https://github.com/harrunisk/Games/blob/Feature-Dashboard/art/appGif.gif" alt="Games" width="300">
+</p>
+
 ### Architecture
 * [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)
 * [MVVM](https://www.raywenderlich.com/8984-mvvm-on-android)
@@ -34,4 +38,27 @@
 * Data (This layer responsible for all kind of data calls and holding the data.)  
 * Domain  (The layer is responsible for data migration between Data and Presentation layers. It can be used every kind of kotlin project. It is not only for android)
 * Presentation (UI stuff such as displaying data, user interaction)  
-### Acknowledgement
+### License
+```
+MIT License
+
+Copyright (c) 2020 harrunisk
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
